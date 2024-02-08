@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="buttons.css">
+        <title>Test!</title>
+    </head>
+
+    <body>
+        <div class="center">
+            <img src="TestImage.png" alt="placeholder image">
+            <h1>This is a string of text?</h1>
+            <div class="container">
+                <div class="center">
+                    <button class="yesButton">yes!</button>
+                    <button class="noButton">no :(</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
