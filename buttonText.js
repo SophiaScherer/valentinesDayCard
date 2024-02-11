@@ -20,5 +20,5 @@ function increaseFontSize() {
 
 function show() {
     document.getElementById("yesImage").style.display = "block";
-    document.getElementById("yesButton").style.display = "hidden";
+    document.getElementById("yes").style.display = "none";
 }
