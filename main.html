@@ -2,17 +2,20 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="buttons.css">
+        <script src="buttonText.js"></script>
         <title>Test!</title>
     </head>
 
     <body>
+
         <div class="center">
+            <img src="TestImage2.png" id="yesImage" class="yesImage" alt="placeholder image">
             <img src="TestImage.png" alt="placeholder image">
             <h1>This is a string of text?</h1>
             <div class="container">
                 <div class="center">
-                    <button class="yesButton">yes!</button>
-                    <button class="noButton">no :(</button>
+                    <button class="yesButton" id="yes" onClick="show()">yes!</button>
+                    <button class="noButton" id="newMessage" onClick="changeText(); increaseFontSize()">no :(</button>
                 </div>
             </div>
         </div>
