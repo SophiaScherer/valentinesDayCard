@@ -1,9 +1,19 @@
 const buttonStatements = [
-    "test1",
-    "test2",
-    "test3",
-    "test4",
-    "test5",
+    "Are you sure?",
+    "Really sure?",
+    "Think again!",
+    "Last chance!",
+    "Surely not?",
+    "You might regret this!",
+    "Give it another thought!",
+    "Are you absolutely certain??",
+    "This could be a mistake",
+    "Have a heart!",
+    "Don't be so cold :(",
+    "Change of heart??",
+    "Won't you reconsider?",
+    "Is that your final answer?",
+    "You're breaking my heart :("
 ];
 
 function changeText() {
@@ -15,10 +25,12 @@ function increaseFontSize() {
     let txt = document.getElementById("yes");
     let style = window.getComputedStyle(txt, null).getPropertyValue("font-size");
     let currentSize = parseFloat(style);
-    txt.style.fontSize = (currentSize * 1.5) + "px";
+    txt.style.fontSize = (currentSize + 2) + "px";
 }
 
 function show() {
-    document.getElementById("yesImage").style.display = "block";
-    document.getElementById("yes").style.display = "none";
+    document.getElementById("testId").style.display = "none";
+    document.getElementById("valentinesMessage").innerText = "Huzzazh! :)";
+    const image = document.getElementById("startImage");
+    image.src = "https://i.pinimg.com/originals/53/20/6c/53206c866a471f960041a8f1b48c95b1.gif";
 }
