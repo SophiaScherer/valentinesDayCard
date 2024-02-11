@@ -32,5 +32,5 @@ function show() {
     document.getElementById("testId").style.display = "none";
     document.getElementById("valentinesMessage").innerText = "Huzzazh! :) \n (pretend there's confetti)";
     const image = document.getElementById("startImage");
-    image.src = "https://i.pinimg.com/originals/53/20/6c/53206c866a471f960041a8f1b48c95b1.gif";
+    image.src = "yesImage.gif";
 }
