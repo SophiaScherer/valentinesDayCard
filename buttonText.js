@@ -16,9 +16,16 @@ const buttonStatements = [
     "You're breaking my heart :("
 ];
 
+let buttonClick = 0;
+
 function changeText() {
     const newText = buttonStatements[Math.floor(Math.random()*buttonStatements.length)];
     document.getElementById("newMessage").childNodes[0].nodeValue = newText;
+    buttonClick += 1;
+    if (buttonClick === 50) {
+        document.getElementById("newMessage").style.display = "none";
+        document.getElementById("yes").childNodes[0].nodeValue = "YES!!!";
+    }
 }
 
 function increaseFontSize() {
@@ -29,7 +36,7 @@ function increaseFontSize() {
 }
 
 function show() {
-    document.getElementById("testId").style.display = "none";
+    document.getElementById("buttonId").style.display = "none";
     document.getElementById("valentinesMessage").innerText = "Huzzazh! :) \n (there's confetti!!)";
     const image = document.getElementById("startImage");
     image.src = "yesImage.gif";
