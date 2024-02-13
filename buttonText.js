@@ -1,9 +1,10 @@
 const buttonStatements = [
     "Are you sure?",
+    "pookie please",
     "Really sure?",
     "Think again!",
     "Last chance!",
-    "Surely not?",
+    "Pleassseeeeeee",
     "You might regret this!",
     "Give it another thought!",
     "Are you absolutely certain??",
@@ -11,7 +12,8 @@ const buttonStatements = [
     "Have a heart!",
     "Don't be so cold :(",
     "Change of heart??",
-    "Won't you reconsider?",
+    "I'll be sad :(",
+    "I'll be very very very sad!!!",
     "Is that your final answer?",
     "You're breaking my heart :("
 ];
@@ -32,7 +34,7 @@ function increaseFontSize() {
     let txt = document.getElementById("yes");
     let style = window.getComputedStyle(txt, null).getPropertyValue("font-size");
     let currentSize = parseFloat(style);
-    txt.style.fontSize = (currentSize + 2) + "px";
+    txt.style.fontSize = (currentSize + 2.5) + "px";
 }
 
 function show() {
